@@ -49,9 +49,9 @@ buttonGenera.addEventListener('click',
 // click annulla
 buttonAnnulla.addEventListener('click',
   function(){
-    formKm.innerHTML = '';
+    formKm.value = '';
     formEta.value = 'maggiorenne';
-    formNome.innerHTML = '';
+    formNome.value = '';
 
     biglNome.innerHTML = '';
     biglOfferta.innerHTML = '';
