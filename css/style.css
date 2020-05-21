@@ -5,6 +5,25 @@
   box-sizing: border-box;
 }
 
-section {
+body {
+  background-color: #b91450;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  padding: 20px 0;
+}
+div {
   
+  background-color: white;
+  margin:0 20px;
+  padding: 20px 0;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
 }

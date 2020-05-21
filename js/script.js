@@ -18,33 +18,47 @@ var formEtaValue;
 // click genera
 buttonGenera.addEventListener('click',
   function(){
+    document.getElementById('info').className = 'visible';
 
     // variabili
     var formKmValue = formKm.value;
     var formEtaValue = formEta.value;
-    var offerta;
+    var offerta = 'non è disponibile nessuna offerta per te :p';
 
     //calcolo prezzo
     var prezzo = formKmValue * 0.21;
 
     //calcolo offerta
-    if (formEtaValue = 'minorenne') {
+    if (formEtaValue === 'minorenne') {
       prezzo = prezzo - (prezzo * 0.2);
-    } else if (formEtaValue = 'over') {
+      offerta = 'offerta jr';
+    } else if (formEtaValue === 'over') {
       prezzo = prezzo - (prezzo * 0.4);
+      offerta = 'offerta silver';
     }
 
+    //stampa in html bigl
     biglNome.innerHTML = formNome.value;
     biglCosto.innerHTML = prezzo.toFixed(2) + ' euro';
-
+    biglOfferta.innerHTML = offerta;
+    biglCarrozza.innerHTML = Math.floor(Math.random() * 8);
+    biglCpp.innerHTML = Math.floor(Math.random() * 90000 + 10000);
   }
 );
 
 // click annulla
 buttonAnnulla.addEventListener('click',
   function(){
+    formKm.innerHTML = '';
+    formEta.value = 'maggiorenne';
+    formNome.innerHTML = '';
+
     biglNome.innerHTML = '';
     biglOfferta.innerHTML = '';
     biglCosto.innerHTML = '';
+    biglCarrozza.innerHTML = '';
+    biglCpp.innerHTML = '';
+
+    document.getElementById('info').className = 'hidden';
   }
 );

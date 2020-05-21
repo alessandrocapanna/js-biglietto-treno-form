@@ -9,7 +9,7 @@
     <section>
       <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-      <div>
+      <div class="form">
         <label>nome e cognome </label>
         <input type="text" id="form-nome">
 
@@ -31,11 +31,13 @@
     <section id="biglietto">
       <h2>IL TUO BIGLIETTO</h2>
 
-      <p>NOME PASSEGGERO: <span id="bigl-nome"></span></p>
-      <p>Offerta: <span id="bigl-offerta"></span></p>
-      <p>Carrozza: <span id="bigl-carrozza"></span></p>
-      <p>Codice CPP: <span id="bigl-cpp"></span></p>
-      <p>Costo: <span id="bigl-costo"></span></p>
+      <div id="info" class="hidden">
+        <p>NOME PASSEGGERO: <span id="bigl-nome"></span></p>
+        <p>Offerta: <span id="bigl-offerta"></span></p>
+        <p>Carrozza: <span id="bigl-carrozza"></span></p>
+        <p>Codice CPP: <span id="bigl-cpp"></span></p>
+        <p>Costo: <span id="bigl-costo"></span></p>
+      </div>
     </section>
 
     <script type="text/javascript" src="js/script.js">
