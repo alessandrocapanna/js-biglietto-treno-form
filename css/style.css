@@ -7,23 +7,91 @@
 
 body {
   background-color: #b91450;
-  text-align: center;
 }
 
 h2 {
   color: white;
   padding: 20px 0;
+  text-align: center;
 }
-div {
-  
+.box {
   background-color: white;
   margin:0 20px;
-  padding: 20px 0;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
+.box:last-of-type {
+  height: 200px;
+}
+.box .input-km,
+.box .input-eta {
+  padding-left: 30px;
+}
+.box input,
+.box select {
+  padding: 3px;
+  border: 1px solid #b91450;
+  border-radius: 5px;
+}
+.box input:focus {
+  color: #b91450;
+  border: 1px solid #b91450;
+}
+.box input:focus::placeholder {
+  color: blue;
+}
+.box label {
+  color: #b91450;
+  font-size: 18px;
+  padding-bottom: 10px;
+  display: block;
+}
+.bottoni {
+  align-self: flex-end;
+  width: 100%;
+}
+.bottoni button {
+  color: rgb(185, 20, 80);
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-color: rgb( 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 0 10px;
+}
+#info .box-info{
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+#info > p:first-of-type {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+#info .box-info p {
+  text-align: left;
+  padding: 10px;
+  height: 110px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+#info .box-info p:last-of-type {
+  flex-grow: 4;
+}
+#info .box-info p:first-of-type {
+  background-color: grey;
+}
+#info .box-info span {
+  line-height: 130px;
+}
+/* quando clicca annula x js */
 .hidden {
   display: none;
-}
-.visible {
-  display: block;
 }

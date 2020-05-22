@@ -6,37 +6,52 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- sectio form -->
     <section>
       <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-      <div class="form">
-        <label>nome e cognome </label>
-        <input type="text" id="form-nome">
+      <div class="box">
 
-        <label>km da percorrere </label>
-        <input type="number" id="form-km">
+        <div class="input-dati-utente">
+          <label>Nome e cognome </label>
+          <input type="text" id="form-nome" placeholder="inserisci il tuo nome">
+        </div>
 
-        <label>fascia di età </label>
-        <select id="form-eta">
-          <option value="maggiorenne">Maggiorenne</option>
-          <option value="over">Over 65</option>
-          <option value="minorenne">Minorenne</option>
-        </select>
+        <div class="input-km">
+          <label>Km da percorrere </label>
+          <input type="number" id="form-km" placeholder="inserisci i km">
+        </div>
 
-        <button id="form-genera">GENERA</button>
-        <button id="form-annulla">ANNULLA</button>
+        <div class="input-eta">
+          <label>Fascia di età </label>
+          <select id="form-eta">
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over">Over 65</option>
+            <option value="minorenne">Minorenne</option>
+          </select>
+        </div>
+
+        <div class="bottoni">
+          <button id="form-genera">GENERA</button>
+          <button id="form-annulla">ANNULLA</button>
+        </div>
+
       </div>
     </section>
 
+    <!-- sectio biglietto -->
     <section id="biglietto">
       <h2>IL TUO BIGLIETTO</h2>
 
-      <div id="info" class="hidden">
-        <p>NOME PASSEGGERO: <span id="bigl-nome"></span></p>
-        <p>Offerta: <span id="bigl-offerta"></span></p>
-        <p>Carrozza: <span id="bigl-carrozza"></span></p>
-        <p>Codice CPP: <span id="bigl-cpp"></span></p>
-        <p>Costo: <span id="bigl-costo"></span></p>
+      <div id="info" class="box hidden">
+        <p>DETTAGLIO PASSEGGERI</p>
+        <div class="box-info">
+          <p>NOME PASSEGGERO: <br><span id="bigl-nome"></span></p>
+          <p>Offerta: <br><span id="bigl-offerta"></span></p>
+          <p>Carrozza: <br><span id="bigl-carrozza"></span></p>
+          <p>Codice CPP: <br><span id="bigl-cpp"></span></p>
+          <p>Costo: <br><span id="bigl-costo"></span></p>
+        </div>
       </div>
     </section>
 

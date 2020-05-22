@@ -18,7 +18,7 @@ var formEtaValue;
 // click genera
 buttonGenera.addEventListener('click',
   function(){
-    document.getElementById('info').className = 'visible';
+    document.getElementById('info').className = 'box';
 
     // variabili
     var formKmValue = formKm.value;
