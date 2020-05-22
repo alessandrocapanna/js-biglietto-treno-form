@@ -41,7 +41,7 @@ buttonGenera.addEventListener('click',
     biglNome.innerHTML = formNome.value;
     biglCosto.innerHTML = prezzo.toFixed(2) + ' euro';
     biglOfferta.innerHTML = offerta;
-    biglCarrozza.innerHTML = Math.floor(Math.random() * 8);
+    biglCarrozza.innerHTML = Math.floor(Math.random() * 7 + 1 );
     biglCpp.innerHTML = Math.floor(Math.random() * 90000 + 10000);
   }
 );
